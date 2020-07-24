@@ -1,0 +1,8 @@
+name: BulletLineMainSystem
+main: sqmeru\BulletLineMainSystem\BulletLineMainSystem
+
+api: 3.14.0
+version: 1.0.3
+
+author: sqmeru
+website: https://github.com/sqmeru/AquaMainCore
