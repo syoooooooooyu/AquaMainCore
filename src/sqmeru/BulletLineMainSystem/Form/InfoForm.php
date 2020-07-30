@@ -13,7 +13,7 @@ class InfoForm implements Form{
             return;
         }
 
-        $player->sendForm(new self);
+        //$player->sendForm(new self);なにこれ
     }
 
     public function jsonSerialize()

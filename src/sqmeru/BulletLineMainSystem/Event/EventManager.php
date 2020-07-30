@@ -9,6 +9,7 @@ use sqmeru\BulletLineMainSystem\BulletLineMainSystem;
 use sqmeru\BulletLineMainSystem\Event\Player\InteractEvent;
 use sqmeru\BulletLineMainSystem\Event\Player\JoinEvent;
 use sqmeru\BulletLineMainSystem\Event\Player\QuitEvent;
+use sqmeru\BulletLineMainSystem\Event\Server\PacketReceiveEvent;
 
 class EventManager{
       public static function registerEvents(BulletLineMainSystem $main){
@@ -17,6 +18,7 @@ class EventManager{
         Server::getInstance()->getPluginManager()->registerEvents(new InteractEvent(),$main);
         Server::getInstance()->getPluginManager()->registerEvents(new JoinEvent(),$main);
         Server::getInstance()->getPluginManager()->registerEvents(new QuitEvent(),$main);
+        Server::getInstance()->getPluginManager()->registerEvents(new PacketReceiveEvent(),$main);
     }
 
 }
